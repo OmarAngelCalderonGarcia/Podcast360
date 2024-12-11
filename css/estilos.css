@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1b1b1b;
+    color: #e6e6e6;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #40c0d0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a {
+    color: #e6e6e6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu li a:hover {
+    color: #40c0d0;
+}
+
+.header {
+    background: url('../img/portada.jpg') no-repeat center center/cover;
+    height: 90vh;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.header h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    font-family: "Gravitas One", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.header p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.boton {
+    background-color: #40c0d0;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: #2fa6b1;
+}
+
+.temas {
+    padding: 40px 20px;
+}
+
+.temas h2 {
+    font-size: 30px;
+    color: #40c0d0;
+    margin-bottom: 20px;
+}
+
+.tema {
+    background: #2b2b2b;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 8px;
+    max-width: 600px;
+}
+
+.tema h3 {
+    font-size: 24px;
+    color: #40c0d0;
+}
+
+.tema p {
+    color: #a9a9a9;
+}
+
+.cita {
+    background-color: #3c3c3c;
+    color: #d4d4d4;
+    padding: 20px;
+    font-size: 20px;
+    font-style: oblique;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.mirar {
+    padding: 40px 20px;
+    background-color: #2b2b2b;
+}
+
+.mirar h2 {
+    font-size: 28px;
+    color: #40c0d0;
+}
+
+.mirar p {
+    margin-bottom: 20px;
+    color: #a9a9a9;
+}
+
+.mirar iframe {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+}
+
+.footer {
+    background-color: #333;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer p {
+    color: #8e8e8e;
+}
+
+.redes img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #333;
+        padding: 20px;
+    }
+
+    .menu.open {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+}
+
+.contacto {
+    padding: 40px 20px;
+    background-color: #2b2b2b;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contacto h2 {
+    font-size: 24px;
+    color: #40c0d0;
+    margin-bottom: 20px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #333;
+    color: #e6e6e6;
+    border: 1px solid #444;
+    border-radius: 8px;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: #40c0d0;
+}
+
+.campo textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.boton {
+    background-color: #40c0d0;
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #2fa6b1;
+}
